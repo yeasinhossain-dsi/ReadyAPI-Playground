@@ -1,0 +1,83 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ReadyAPI-Playground",
+		"_postman_id": "d6e19323-d84b-089b-5f6c-3d189451644c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"url": "localhost:1111/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "yeasin",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save User",
+			"request": {
+				"url": "localhost:1111/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.doe@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Burj Al Khalifa, Dubai",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
